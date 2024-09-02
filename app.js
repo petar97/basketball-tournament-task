@@ -81,8 +81,8 @@ function simulateMatch(team1, team2) {
     const randomFactor1 = Math.random() * 15;
     const randomFactor2 = Math.random() * 15;
 
-    const team1Score = Math.round(baseScore + rankDifference + randomFactor1);
-    const team2Score = Math.round(baseScore - rankDifference + randomFactor2);
+    const team1Score = Math.round(baseScore - rankDifference + randomFactor1);
+    const team2Score = Math.round(baseScore + rankDifference + randomFactor2);
 
     return [team1Score, team2Score];
 }
